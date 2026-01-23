@@ -1,0 +1,1019 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"36 ./clcd.h
+[; ;./clcd.h: 36: void clcd_putch(const char data, unsigned char addr);
+[v _clcd_putch `(v ~T0 @X0 0 ef2`Cuc`uc ]
+"38
+[; ;./clcd.h: 38: void clear_screen(void);
+[v _clear_screen `(v ~T0 @X0 0 ef ]
+"37
+[; ;./clcd.h: 37: void clcd_print(const char *str, unsigned char addr);
+[v _clcd_print `(v ~T0 @X0 0 ef2`*Cuc`uc ]
+[v F972 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include/pic.h
+[v __delay `JF972 ~T0 @X0 0 e ]
+[p i __delay ]
+"2902 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2902: extern volatile __bit TMR2ON __attribute__((address(0x92)));
+[v _TMR2ON `Vb ~T0 @X0 0 e@146 ]
+"2683
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2683: extern volatile __bit RB3 __attribute__((address(0x33)));
+[v _RB3 `Vb ~T0 @X0 0 e@51 ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc/pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"7 washing_machine.c
+[; ;washing_machine.c: 7: unsigned char min = 0;
+[v _min `uc ~T0 @X0 1 e ]
+[i _min
+-> -> 0 `i `uc
+]
+"8
+[; ;washing_machine.c: 8: unsigned char sec = 0;
+[v _sec `uc ~T0 @X0 1 e ]
+[i _sec
+-> -> 0 `i `uc
+]
+"11
+[; ;washing_machine.c: 11: unsigned char screen_flag = 0x10;
+[v _screen_flag `uc ~T0 @X0 1 e ]
+[i _screen_flag
+-> -> 16 `i `uc
+]
+"14
+[; ;washing_machine.c: 14: unsigned char program_index = 0;
+[v _program_index `uc ~T0 @X0 1 e ]
+[i _program_index
+-> -> 0 `i `uc
+]
+"15
+[; ;washing_machine.c: 15: unsigned char water_index = 0;
+[v _water_index `uc ~T0 @X0 1 e ]
+[i _water_index
+-> -> 0 `i `uc
+]
+"18
+[; ;washing_machine.c: 18: const char *programs[] = {
+[v _programs `*Cuc ~T0 @X0 -> 12 `i e ]
+[i _programs
+:U ..
+:s 1C
+:s 2C
+:s 3C
+:s 4C
+:s 5C
+:s 6C
+:s 7C
+:s 8C
+:s 9C
+:s 10C
+:s 11C
+:s 12C
+..
+]
+"34
+[; ;washing_machine.c: 34: const char *water_levels[] = {
+[v _water_levels `*Cuc ~T0 @X0 -> 5 `i e ]
+[i _water_levels
+:U ..
+:s 13C
+:s 14C
+:s 15C
+:s 16C
+:s 17C
+..
+]
+"43
+[; ;washing_machine.c: 43: void display_time(void)
+[v _display_time `(v ~T0 @X0 1 ef ]
+"44
+[; ;washing_machine.c: 44: {
+{
+[e :U _display_time ]
+[f ]
+"45
+[; ;washing_machine.c: 45:     clcd_putch((min / 10) + '0', (0xC0 + 8));
+[e ( _clcd_putch (2 , -> + -> / -> _min `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 8 `i `uc ]
+"46
+[; ;washing_machine.c: 46:     clcd_putch((min % 10) + '0', (0xC0 + 9));
+[e ( _clcd_putch (2 , -> + -> % -> _min `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 9 `i `uc ]
+"47
+[; ;washing_machine.c: 47:     clcd_putch(':', (0xC0 + 10));
+[e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 192 `i -> 10 `i `uc ]
+"48
+[; ;washing_machine.c: 48:     clcd_putch((sec / 10) + '0', (0xC0 + 11));
+[e ( _clcd_putch (2 , -> + -> / -> _sec `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 11 `i `uc ]
+"49
+[; ;washing_machine.c: 49:     clcd_putch((sec % 10) + '0', (0xC0 + 12));
+[e ( _clcd_putch (2 , -> + -> % -> _sec `i -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 12 `i `uc ]
+"50
+[; ;washing_machine.c: 50: }
+[e :UE 99 ]
+}
+"53
+[; ;washing_machine.c: 53: void wm_power_on_screen(void)
+[v _wm_power_on_screen `(v ~T0 @X0 1 ef ]
+"54
+[; ;washing_machine.c: 54: {
+{
+[e :U _wm_power_on_screen ]
+[f ]
+"55
+[; ;washing_machine.c: 55:     clear_screen();
+[e ( _clear_screen ..  ]
+"56
+[; ;washing_machine.c: 56:     clcd_print("Powering ON", (0xC0 + 3));
+[e ( _clcd_print (2 , :s 18C -> + -> 192 `i -> 3 `i `uc ]
+"57
+[; ;washing_machine.c: 57:     clcd_print("Washing Machine", (0x90 + 1));
+[e ( _clcd_print (2 , :s 19C -> + -> 144 `i -> 1 `i `uc ]
+"58
+[; ;washing_machine.c: 58:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"59
+[; ;washing_machine.c: 59:     clear_screen();
+[e ( _clear_screen ..  ]
+"60
+[; ;washing_machine.c: 60: }
+[e :UE 100 ]
+}
+"63
+[; ;washing_machine.c: 63: void set_time_for_program(void)
+[v _set_time_for_program `(v ~T0 @X0 1 ef ]
+"64
+[; ;washing_machine.c: 64: {
+{
+[e :U _set_time_for_program ]
+[f ]
+"67
+[; ;washing_machine.c: 67:     switch (program_index)
+[e $U 103  ]
+"68
+[; ;washing_machine.c: 68:     {
+{
+"69
+[; ;washing_machine.c: 69:         case 0:
+[e :U 104 ]
+"70
+[; ;washing_machine.c: 70:             min = 0; sec = 50;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 50 `i `uc ]
+"71
+[; ;washing_machine.c: 71:             break;
+[e $U 102  ]
+"73
+[; ;washing_machine.c: 73:         case 1:
+[e :U 105 ]
+"74
+[; ;washing_machine.c: 74:             min = 1; sec = 20;
+[e = _min -> -> 1 `i `uc ]
+[e = _sec -> -> 20 `i `uc ]
+"75
+[; ;washing_machine.c: 75:             break;
+[e $U 102  ]
+"77
+[; ;washing_machine.c: 77:         case 2:
+[e :U 106 ]
+"78
+[; ;washing_machine.c: 78:             min = 0; sec = 40;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 40 `i `uc ]
+"79
+[; ;washing_machine.c: 79:             break;
+[e $U 102  ]
+"81
+[; ;washing_machine.c: 81:         case 3:
+[e :U 107 ]
+"82
+[; ;washing_machine.c: 82:             min = 1; sec = 0;
+[e = _min -> -> 1 `i `uc ]
+[e = _sec -> -> 0 `i `uc ]
+"83
+[; ;washing_machine.c: 83:             break;
+[e $U 102  ]
+"85
+[; ;washing_machine.c: 85:         case 4:
+[e :U 108 ]
+"86
+[; ;washing_machine.c: 86:             min = 1; sec = 30;
+[e = _min -> -> 1 `i `uc ]
+[e = _sec -> -> 30 `i `uc ]
+"87
+[; ;washing_machine.c: 87:             break;
+[e $U 102  ]
+"89
+[; ;washing_machine.c: 89:         case 5:
+[e :U 109 ]
+"90
+[; ;washing_machine.c: 90:             min = 1; sec = 10;
+[e = _min -> -> 1 `i `uc ]
+[e = _sec -> -> 10 `i `uc ]
+"91
+[; ;washing_machine.c: 91:             break;
+[e $U 102  ]
+"93
+[; ;washing_machine.c: 93:         case 6:
+[e :U 110 ]
+"94
+[; ;washing_machine.c: 94:             min = 0; sec = 45;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 45 `i `uc ]
+"95
+[; ;washing_machine.c: 95:             break;
+[e $U 102  ]
+"97
+[; ;washing_machine.c: 97:         case 7:
+[e :U 111 ]
+"98
+[; ;washing_machine.c: 98:             min = 1; sec = 40;
+[e = _min -> -> 1 `i `uc ]
+[e = _sec -> -> 40 `i `uc ]
+"99
+[; ;washing_machine.c: 99:             break;
+[e $U 102  ]
+"101
+[; ;washing_machine.c: 101:         case 8:
+[e :U 112 ]
+"102
+[; ;washing_machine.c: 102:             min = 0; sec = 55;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 55 `i `uc ]
+"103
+[; ;washing_machine.c: 103:             break;
+[e $U 102  ]
+"105
+[; ;washing_machine.c: 105:         case 9:
+[e :U 113 ]
+"106
+[; ;washing_machine.c: 106:             min = 0; sec = 35;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 35 `i `uc ]
+"107
+[; ;washing_machine.c: 107:             break;
+[e $U 102  ]
+"109
+[; ;washing_machine.c: 109:         case 10:
+[e :U 114 ]
+"110
+[; ;washing_machine.c: 110:             min = 0; sec = 30;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 30 `i `uc ]
+"111
+[; ;washing_machine.c: 111:             break;
+[e $U 102  ]
+"113
+[; ;washing_machine.c: 113:         case 11:
+[e :U 115 ]
+"114
+[; ;washing_machine.c: 114:             min = 0; sec = 25;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 25 `i `uc ]
+"115
+[; ;washing_machine.c: 115:             break;
+[e $U 102  ]
+"117
+[; ;washing_machine.c: 117:         default:
+[e :U 116 ]
+"118
+[; ;washing_machine.c: 118:             min = 0; sec = 50;
+[e = _min -> -> 0 `i `uc ]
+[e = _sec -> -> 50 `i `uc ]
+"119
+[; ;washing_machine.c: 119:             break;
+[e $U 102  ]
+"120
+[; ;washing_machine.c: 120:     }
+}
+[e $U 102  ]
+[e :U 103 ]
+[e [\ _program_index , $ -> 0 `i 104
+ , $ -> 1 `i 105
+ , $ -> 2 `i 106
+ , $ -> 3 `i 107
+ , $ -> 4 `i 108
+ , $ -> 5 `i 109
+ , $ -> 6 `i 110
+ , $ -> 7 `i 111
+ , $ -> 8 `i 112
+ , $ -> 9 `i 113
+ , $ -> 10 `i 114
+ , $ -> 11 `i 115
+ 116 ]
+[e :U 102 ]
+"121
+[; ;washing_machine.c: 121: }
+[e :UE 101 ]
+}
+"124
+[; ;washing_machine.c: 124: void washing_machine_task(unsigned char key)
+[v _washing_machine_task `(v ~T0 @X0 1 ef1`uc ]
+"125
+[; ;washing_machine.c: 125: {
+{
+[e :U _washing_machine_task ]
+"124
+[; ;washing_machine.c: 124: void washing_machine_task(unsigned char key)
+[v _key `uc ~T0 @X0 1 r1 ]
+"125
+[; ;washing_machine.c: 125: {
+[f ]
+"126
+[; ;washing_machine.c: 126:     switch (screen_flag)
+[e $U 119  ]
+"127
+[; ;washing_machine.c: 127:     {
+{
+"129
+[; ;washing_machine.c: 129:         case 0x10:
+[e :U 120 ]
+"131
+[; ;washing_machine.c: 131:     clcd_print("Press key 5 to", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 20C -> + -> 192 `i -> 0 `i `uc ]
+"132
+[; ;washing_machine.c: 132:     clcd_print("Power ON Wash", (0x90 + 0));
+[e ( _clcd_print (2 , :s 21C -> + -> 144 `i -> 0 `i `uc ]
+"134
+[; ;washing_machine.c: 134:     if (key == 5)
+[e $ ! == -> _key `i -> 5 `i 121  ]
+"135
+[; ;washing_machine.c: 135:     {
+{
+"137
+[; ;washing_machine.c: 137:         unsigned char i;
+[v _i `uc ~T0 @X0 1 a ]
+"139
+[; ;washing_machine.c: 139:         clear_screen();
+[e ( _clear_screen ..  ]
+"142
+[; ;washing_machine.c: 142:         for (i = 0; i < 16; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 122  ]
+[e $U 123  ]
+[e :U 122 ]
+"143
+[; ;washing_machine.c: 143:         {
+{
+"144
+[; ;washing_machine.c: 144:             clcd_putch(0xFF, (0x80 + i));
+[e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 128 `i -> _i `i `uc ]
+"145
+[; ;washing_machine.c: 145:             _delay((unsigned long)((30)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"146
+[; ;washing_machine.c: 146:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 122  ]
+[e :U 123 ]
+}
+"148
+[; ;washing_machine.c: 148:         clcd_print("Powering ON", (0xC0 + 3));
+[e ( _clcd_print (2 , :s 22C -> + -> 192 `i -> 3 `i `uc ]
+"149
+[; ;washing_machine.c: 149:         clcd_print("Washing Machine", (0x90 + 1));
+[e ( _clcd_print (2 , :s 23C -> + -> 144 `i -> 1 `i `uc ]
+"152
+[; ;washing_machine.c: 152:         for (i = 0; i < 16; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 16 `i 125  ]
+[e $U 126  ]
+[e :U 125 ]
+"153
+[; ;washing_machine.c: 153:         {
+{
+"154
+[; ;washing_machine.c: 154:             clcd_putch(0xFF, (0xD0 + i));
+[e ( _clcd_putch (2 , -> -> 255 `i `uc -> + -> 208 `i -> _i `i `uc ]
+"155
+[; ;washing_machine.c: 155:             _delay((unsigned long)((30)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"156
+[; ;washing_machine.c: 156:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 16 `i 125  ]
+[e :U 126 ]
+}
+"158
+[; ;washing_machine.c: 158:         _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"159
+[; ;washing_machine.c: 159:         clear_screen();
+[e ( _clear_screen ..  ]
+"161
+[; ;washing_machine.c: 161:         screen_flag = 0x20;
+[e = _screen_flag -> -> 32 `i `uc ]
+"162
+[; ;washing_machine.c: 162:     }
+}
+[e :U 121 ]
+"163
+[; ;washing_machine.c: 163:     break;
+[e $U 118  ]
+"166
+[; ;washing_machine.c: 166:         case 0x20:
+[e :U 128 ]
+"168
+[; ;washing_machine.c: 168:             clcd_print("Washing Programs", (0x80 + 0));
+[e ( _clcd_print (2 , :s 24C -> + -> 128 `i -> 0 `i `uc ]
+"169
+[; ;washing_machine.c: 169:             clcd_putch('*', (0xC0 + 0));
+[e ( _clcd_putch (2 , -> -> 42 `ui `uc -> + -> 192 `i -> 0 `i `uc ]
+"170
+[; ;washing_machine.c: 170:             clcd_print(programs[program_index], (0xC0 + 1));
+[e ( _clcd_print (2 , *U + &U _programs * -> _program_index `ux -> -> # *U &U _programs `ui `ux -> + -> 192 `i -> 1 `i `uc ]
+"171
+[; ;washing_machine.c: 171:             clcd_print("SW4:Scroll", (0xD0 + 0));
+[e ( _clcd_print (2 , :s 25C -> + -> 208 `i -> 0 `i `uc ]
+"173
+[; ;washing_machine.c: 173:             if (key == 4)
+[e $ ! == -> _key `i -> 4 `i 129  ]
+"174
+[; ;washing_machine.c: 174:             {
+{
+"175
+[; ;washing_machine.c: 175:                 program_index++;
+[e ++ _program_index -> -> 1 `i `uc ]
+"176
+[; ;washing_machine.c: 176:                 if (program_index >= 12)
+[e $ ! >= -> _program_index `i -> 12 `i 130  ]
+"177
+[; ;washing_machine.c: 177:                     program_index = 0;
+[e = _program_index -> -> 0 `i `uc ]
+[e :U 130 ]
+"179
+[; ;washing_machine.c: 179:                 clear_screen();
+[e ( _clear_screen ..  ]
+"180
+[; ;washing_machine.c: 180:             }
+}
+[e $U 131  ]
+"181
+[; ;washing_machine.c: 181:             else if (key == 5)
+[e :U 129 ]
+[e $ ! == -> _key `i -> 5 `i 132  ]
+"182
+[; ;washing_machine.c: 182:             {
+{
+"183
+[; ;washing_machine.c: 183:                 clear_screen();
+[e ( _clear_screen ..  ]
+"184
+[; ;washing_machine.c: 184:                 screen_flag = 0x30;
+[e = _screen_flag -> -> 48 `i `uc ]
+"185
+[; ;washing_machine.c: 185:             }
+}
+[e :U 132 ]
+[e :U 131 ]
+"186
+[; ;washing_machine.c: 186:             break;
+[e $U 118  ]
+"189
+[; ;washing_machine.c: 189:         case 0x30:
+[e :U 133 ]
+"191
+[; ;washing_machine.c: 191:             clcd_print("Water Level:", (0x80 + 0));
+[e ( _clcd_print (2 , :s 26C -> + -> 128 `i -> 0 `i `uc ]
+"192
+[; ;washing_machine.c: 192:             clcd_putch('*', (0xC0 + 0));
+[e ( _clcd_putch (2 , -> -> 42 `ui `uc -> + -> 192 `i -> 0 `i `uc ]
+"193
+[; ;washing_machine.c: 193:             clcd_print(water_levels[water_index], (0xC0 + 1));
+[e ( _clcd_print (2 , *U + &U _water_levels * -> _water_index `ux -> -> # *U &U _water_levels `ui `ux -> + -> 192 `i -> 1 `i `uc ]
+"194
+[; ;washing_machine.c: 194:             clcd_print("SW4:Scroll", (0xD0 + 0));
+[e ( _clcd_print (2 , :s 27C -> + -> 208 `i -> 0 `i `uc ]
+"196
+[; ;washing_machine.c: 196:             if (key == 4)
+[e $ ! == -> _key `i -> 4 `i 134  ]
+"197
+[; ;washing_machine.c: 197:             {
+{
+"198
+[; ;washing_machine.c: 198:                 water_index++;
+[e ++ _water_index -> -> 1 `i `uc ]
+"199
+[; ;washing_machine.c: 199:                 if (water_index >= 5)
+[e $ ! >= -> _water_index `i -> 5 `i 135  ]
+"200
+[; ;washing_machine.c: 200:                     water_index = 0;
+[e = _water_index -> -> 0 `i `uc ]
+[e :U 135 ]
+"202
+[; ;washing_machine.c: 202:                 clear_screen();
+[e ( _clear_screen ..  ]
+"203
+[; ;washing_machine.c: 203:             }
+}
+[e $U 136  ]
+"204
+[; ;washing_machine.c: 204:             else if (key == 5)
+[e :U 134 ]
+[e $ ! == -> _key `i -> 5 `i 137  ]
+"205
+[; ;washing_machine.c: 205:             {
+{
+"206
+[; ;washing_machine.c: 206:                 clear_screen();
+[e ( _clear_screen ..  ]
+"207
+[; ;washing_machine.c: 207:                 screen_flag = 0x40;
+[e = _screen_flag -> -> 64 `i `uc ]
+"208
+[; ;washing_machine.c: 208:             }
+}
+[e :U 137 ]
+[e :U 136 ]
+"209
+[; ;washing_machine.c: 209:             break;
+[e $U 118  ]
+"212
+[; ;washing_machine.c: 212:         case 0x40:
+[e :U 138 ]
+"214
+[; ;washing_machine.c: 214:             clcd_print("Press Switch :", (0x80 + 0));
+[e ( _clcd_print (2 , :s 28C -> + -> 128 `i -> 0 `i `uc ]
+"215
+[; ;washing_machine.c: 215:             clcd_print("SW5: START", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 29C -> + -> 192 `i -> 0 `i `uc ]
+"216
+[; ;washing_machine.c: 216:             clcd_print("SW6: STOP", (0x90 + 0));
+[e ( _clcd_print (2 , :s 30C -> + -> 144 `i -> 0 `i `uc ]
+"218
+[; ;washing_machine.c: 218:             if (key == 5)
+[e $ ! == -> _key `i -> 5 `i 139  ]
+"219
+[; ;washing_machine.c: 219:             {
+{
+"220
+[; ;washing_machine.c: 220:                 clear_screen();
+[e ( _clear_screen ..  ]
+"223
+[; ;washing_machine.c: 223:                 set_time_for_program();
+[e ( _set_time_for_program ..  ]
+"225
+[; ;washing_machine.c: 225:                 TMR2ON = 1;
+[e = _TMR2ON -> -> 1 `i `b ]
+"227
+[; ;washing_machine.c: 227:                 screen_flag = 0x50;
+[e = _screen_flag -> -> 80 `i `uc ]
+"228
+[; ;washing_machine.c: 228:             }
+}
+[e $U 140  ]
+"229
+[; ;washing_machine.c: 229:             else if (key == 6)
+[e :U 139 ]
+[e $ ! == -> _key `i -> 6 `i 141  ]
+"230
+[; ;washing_machine.c: 230:             {
+{
+"231
+[; ;washing_machine.c: 231:                 clear_screen();
+[e ( _clear_screen ..  ]
+"232
+[; ;washing_machine.c: 232:                 screen_flag = 0x20;
+[e = _screen_flag -> -> 32 `i `uc ]
+"233
+[; ;washing_machine.c: 233:             }
+}
+[e :U 141 ]
+[e :U 140 ]
+"234
+[; ;washing_machine.c: 234:             break;
+[e $U 118  ]
+"237
+[; ;washing_machine.c: 237:         case 0x50:
+[e :U 142 ]
+"243
+[; ;washing_machine.c: 243: static unsigned char door_shown = 0;
+[v F1009 `uc ~T0 @X0 1 s door_shown ]
+[i F1009
+-> -> 0 `i `uc
+]
+"245
+[; ;washing_machine.c: 245: if (RB3 == 0)
+[e $ ! == -> _RB3 `i -> 0 `i 143  ]
+"246
+[; ;washing_machine.c: 246: {
+{
+"247
+[; ;washing_machine.c: 247:     TMR2ON = 0;
+[e = _TMR2ON -> -> 0 `i `b ]
+"249
+[; ;washing_machine.c: 249:     if (door_shown == 0)
+[e $ ! == -> F1009 `i -> 0 `i 144  ]
+"250
+[; ;washing_machine.c: 250:     {
+{
+"251
+[; ;washing_machine.c: 251:         clear_screen();
+[e ( _clear_screen ..  ]
+"252
+[; ;washing_machine.c: 252:         clcd_print("DOOR : OPEN", (0xC0 + 2));
+[e ( _clcd_print (2 , :s 31C -> + -> 192 `i -> 2 `i `uc ]
+"253
+[; ;washing_machine.c: 253:         clcd_print("Please close", (0x90 + 2));
+[e ( _clcd_print (2 , :s 32C -> + -> 144 `i -> 2 `i `uc ]
+"254
+[; ;washing_machine.c: 254:         door_shown = 1;
+[e = F1009 -> -> 1 `i `uc ]
+"255
+[; ;washing_machine.c: 255:     }
+}
+[e :U 144 ]
+"257
+[; ;washing_machine.c: 257:     return;
+[e $UE 117  ]
+"258
+[; ;washing_machine.c: 258: }
+}
+[e $U 145  ]
+"259
+[; ;washing_machine.c: 259: else
+[e :U 143 ]
+"260
+[; ;washing_machine.c: 260: {
+{
+"261
+[; ;washing_machine.c: 261:     if (door_shown == 1)
+[e $ ! == -> F1009 `i -> 1 `i 146  ]
+"262
+[; ;washing_machine.c: 262:     {
+{
+"264
+[; ;washing_machine.c: 264:         clear_screen();
+[e ( _clear_screen ..  ]
+"265
+[; ;washing_machine.c: 265:         door_shown = 0;
+[e = F1009 -> -> 0 `i `uc ]
+"266
+[; ;washing_machine.c: 266:     }
+}
+[e :U 146 ]
+"268
+[; ;washing_machine.c: 268: }
+}
+[e :U 145 ]
+"272
+[; ;washing_machine.c: 272:             clcd_print("Function - wash", (0x80 + 0));
+[e ( _clcd_print (2 , :s 33C -> + -> 128 `i -> 0 `i `uc ]
+"273
+[; ;washing_machine.c: 273:             clcd_print("TIME :", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 34C -> + -> 192 `i -> 0 `i `uc ]
+"275
+[; ;washing_machine.c: 275:             display_time();
+[e ( _display_time ..  ]
+"277
+[; ;washing_machine.c: 277:             clcd_print("SW5: START", (0x90 + 0));
+[e ( _clcd_print (2 , :s 35C -> + -> 144 `i -> 0 `i `uc ]
+"278
+[; ;washing_machine.c: 278:             clcd_print("SW6: PAUSE", (0xD0 + 0));
+[e ( _clcd_print (2 , :s 36C -> + -> 208 `i -> 0 `i `uc ]
+"281
+[; ;washing_machine.c: 281:             if (key == 6)
+[e $ ! == -> _key `i -> 6 `i 147  ]
+"282
+[; ;washing_machine.c: 282:             {
+{
+"283
+[; ;washing_machine.c: 283:                 TMR2ON = 0;
+[e = _TMR2ON -> -> 0 `i `b ]
+"284
+[; ;washing_machine.c: 284:             }
+}
+[e $U 148  ]
+"286
+[; ;washing_machine.c: 286:             else if (key == 5)
+[e :U 147 ]
+[e $ ! == -> _key `i -> 5 `i 149  ]
+"287
+[; ;washing_machine.c: 287:             {
+{
+"288
+[; ;washing_machine.c: 288:                 TMR2ON = 1;
+[e = _TMR2ON -> -> 1 `i `b ]
+"289
+[; ;washing_machine.c: 289:             }
+}
+[e :U 149 ]
+[e :U 148 ]
+"292
+[; ;washing_machine.c: 292:             if (min == 0 && sec == 0)
+[e $ ! && == -> _min `i -> 0 `i == -> _sec `i -> 0 `i 150  ]
+"293
+[; ;washing_machine.c: 293:             {
+{
+"294
+[; ;washing_machine.c: 294:                 TMR2ON = 0;
+[e = _TMR2ON -> -> 0 `i `b ]
+"295
+[; ;washing_machine.c: 295:                 clear_screen();
+[e ( _clear_screen ..  ]
+"296
+[; ;washing_machine.c: 296:                 screen_flag = 0x60;
+[e = _screen_flag -> -> 96 `i `uc ]
+"297
+[; ;washing_machine.c: 297:             }
+}
+[e :U 150 ]
+"298
+[; ;washing_machine.c: 298:             break;
+[e $U 118  ]
+"301
+[; ;washing_machine.c: 301:         case 0x60:
+[e :U 151 ]
+"302
+[; ;washing_machine.c: 302: {
+{
+"303
+[; ;washing_machine.c: 303:     static unsigned char done_once = 0;
+[v F1010 `uc ~T0 @X0 1 s done_once ]
+[i F1010
+-> -> 0 `i `uc
+]
+"305
+[; ;washing_machine.c: 305:     if (done_once == 0)
+[e $ ! == -> F1010 `i -> 0 `i 152  ]
+"306
+[; ;washing_machine.c: 306:     {
+{
+"307
+[; ;washing_machine.c: 307:         clear_screen();
+[e ( _clear_screen ..  ]
+"308
+[; ;washing_machine.c: 308:         clcd_print("Program complete", (0x80 + 0));
+[e ( _clcd_print (2 , :s 37C -> + -> 128 `i -> 0 `i `uc ]
+"309
+[; ;washing_machine.c: 309:         clcd_print("Remove clothes", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 38C -> + -> 192 `i -> 0 `i `uc ]
+"310
+[; ;washing_machine.c: 310:         clcd_print("Press 5 for Menu", (0x90 + 0));
+[e ( _clcd_print (2 , :s 39C -> + -> 144 `i -> 0 `i `uc ]
+"311
+[; ;washing_machine.c: 311:         done_once = 1;
+[e = F1010 -> -> 1 `i `uc ]
+"312
+[; ;washing_machine.c: 312:     }
+}
+[e :U 152 ]
+"315
+[; ;washing_machine.c: 315:     if (key == 5)
+[e $ ! == -> _key `i -> 5 `i 153  ]
+"316
+[; ;washing_machine.c: 316:     {
+{
+"317
+[; ;washing_machine.c: 317:         done_once = 0;
+[e = F1010 -> -> 0 `i `uc ]
+"318
+[; ;washing_machine.c: 318:         clear_screen();
+[e ( _clear_screen ..  ]
+"319
+[; ;washing_machine.c: 319:         screen_flag = 0x10;
+[e = _screen_flag -> -> 16 `i `uc ]
+"320
+[; ;washing_machine.c: 320:     }
+}
+[e :U 153 ]
+"321
+[; ;washing_machine.c: 321: }
+}
+"322
+[; ;washing_machine.c: 322: break;
+[e $U 118  ]
+"323
+[; ;washing_machine.c: 323:     }
+}
+[e $U 118  ]
+[e :U 119 ]
+[e [\ _screen_flag , $ -> 16 `i 120
+ , $ -> 32 `i 128
+ , $ -> 48 `i 133
+ , $ -> 64 `i 138
+ , $ -> 80 `i 142
+ , $ -> 96 `i 151
+ 118 ]
+[e :U 118 ]
+"324
+[; ;washing_machine.c: 324: }
+[e :UE 117 ]
+}
+[a 2C 72 101 97 118 121 0 ]
+[a 9C 82 105 110 115 101 43 68 114 121 0 ]
+[a 10C 68 114 121 32 111 110 108 121 0 ]
+[a 11C 87 97 115 104 32 111 110 108 121 0 ]
+[a 1C 68 97 105 108 121 0 ]
+[a 17C 77 97 120 0 ]
+[a 14C 76 111 119 0 ]
+[a 39C 80 114 101 115 115 32 53 32 102 111 114 32 77 101 110 117 0 ]
+[a 8C 66 101 100 32 115 104 101 101 116 115 0 ]
+[a 6C 69 99 111 32 99 111 116 116 111 110 115 0 ]
+[a 7C 87 111 111 108 101 110 115 0 ]
+[a 24C 87 97 115 104 105 110 103 32 80 114 111 103 114 97 109 115 0 ]
+[a 4C 87 104 105 116 101 115 0 ]
+[a 3C 68 101 108 105 99 97 116 101 115 0 ]
+[a 38C 82 101 109 111 118 101 32 99 108 111 116 104 101 115 0 ]
+[a 13C 65 117 116 111 0 ]
+[a 20C 80 114 101 115 115 32 107 101 121 32 53 32 116 111 0 ]
+[a 15C 77 101 100 105 117 109 0 ]
+[a 25C 83 87 52 58 83 99 114 111 108 108 0 ]
+[a 27C 83 87 52 58 83 99 114 111 108 108 0 ]
+[a 5C 83 116 97 105 110 32 119 97 115 104 0 ]
+[a 33C 70 117 110 99 116 105 111 110 32 45 32 119 97 115 104 0 ]
+[a 21C 80 111 119 101 114 32 79 78 32 87 97 115 104 0 ]
+[a 16C 72 105 103 104 0 ]
+[a 37C 80 114 111 103 114 97 109 32 99 111 109 112 108 101 116 101 0 ]
+[a 32C 80 108 101 97 115 101 32 99 108 111 115 101 0 ]
+[a 12C 65 113 117 97 32 115 116 111 114 101 0 ]
+[a 19C 87 97 115 104 105 110 103 32 77 97 99 104 105 110 101 0 ]
+[a 23C 87 97 115 104 105 110 103 32 77 97 99 104 105 110 101 0 ]
+[a 29C 83 87 53 58 32 83 84 65 82 84 0 ]
+[a 35C 83 87 53 58 32 83 84 65 82 84 0 ]
+[a 30C 83 87 54 58 32 83 84 79 80 0 ]
+[a 18C 80 111 119 101 114 105 110 103 32 79 78 0 ]
+[a 22C 80 111 119 101 114 105 110 103 32 79 78 0 ]
+[a 31C 68 79 79 82 32 58 32 79 80 69 78 0 ]
+[a 36C 83 87 54 58 32 80 65 85 83 69 0 ]
+[a 26C 87 97 116 101 114 32 76 101 118 101 108 58 0 ]
+[a 28C 80 114 101 115 115 32 83 119 105 116 99 104 32 58 0 ]
+[a 34C 84 73 77 69 32 58 0 ]
