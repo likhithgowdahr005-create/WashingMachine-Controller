@@ -37,15 +37,26 @@ The project demonstrates embedded system design including keypad input, LCD inte
 
 ## Simulation Results
 
+### Power ON
+![Power ON](screenshots/01_Power_ON.png)
+
+### Program Selection
 ![Program Selection](screenshots/02_program_selection.png)
 
+### Water Level Selection
 ![Water Level Selection](screenshots/03_water_level_selection.png)
 
+### Start / Stop Control
 ![Start Stop Screen](screenshots/04_start_stop_screen.png)
 
+### Wash Mode Running
 ![Wash Mode Running](screenshots/05_wash_mode_running.png)
 
+### Door Open Safety
 ![Door Open Safety](screenshots/06_door_open_safety.png)
+
+### Program Complete
+![Program Complete](screenshots/07_program_complete.png)
 
 
 ## Author
