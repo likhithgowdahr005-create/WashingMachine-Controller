@@ -35,19 +35,18 @@ The project demonstrates embedded system design including keypad input, LCD inte
 3. Load `.hex` in PICSimLab (PICGenios board)  
 4. Run simulation and interact using keypad  
 
-## Screenshots
+## Simulation Results
 
-| Step | Description |
-|------|------------|
-| Power ON | Initial welcome screen |
-| Program Selection | User selects wash program |
-| Water Level | User selects water level |
-| Start Screen | Ready to start cycle |
-| Running | Wash mode running with timer |
-| Door Safety | Door open detection |
-| Complete | Program completion message |
+![Program Selection](screenshots/02_program_selection.png)
 
-(Refer to `screenshots/` folder)
+![Water Level Selection](screenshots/03_water_level_selection.png)
+
+![Start Stop Screen](screenshots/04_start_stop_screen.png)
+
+![Wash Mode Running](screenshots/05_wash_mode_running.png)
+
+![Door Open Safety](screenshots/06_door_open_safety.png)
+
 
 ## Author
 **Likhith Gowda H R**  
